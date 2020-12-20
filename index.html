@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <title>FilterJS</title>
+</head>
+<body class="bg-light">
+    <div class="container d-flex flex-column shadow-sm bg-white p-0">
+        <header class="container header d-flex flex-column align-items-center">
+            <h1>Filters</h1>
+            <div class = "container d-flex pr-1 flex-row">
+                <div class="container filters_checked d-flex flex-wrap flex-row">
+                </div>
+                <div class="container filters_checked price_checked  d-flex flex-row">
+                </div>
+            </div>
+            
+        </header>
+        <div class="container main d-flex">
+            <aside class="aside d-flex flex-column">
+                <div class="items_count d-flex">Всего найденно: 
+                    <span></span>товаров
+                </div>
+                <div class="filter d-flex flex-column">
+                </div>
+                <div class="priceFilter d-flex mt-3 flex-column">
+                    <span>Цена, грн:</span> 
+                    <form class="d-flex flex-row" name = "priceValue">
+                        <input type="number" class="form-control mr-2 minPrice" name="minPrice" value=""> 
+                        <input type="number" class="form-control mr-2 maxPrice" name="maxPrice" value="">
+                        <button type="button" class="btn btn-primary" name="priceBtn">ОК</button>
+                    </form>
+                    
+                </div>
+            </aside>
+            <main class="main_content d-flex flex-wrap align-items-start align-content-start">
+            </main>
+        </div>
+        <footer class = "footer container d-flex justify-content-center flex-row">
+
+        </footer>
+        
+    </div>
+
+  <script src="main.js"></script>
+      
+    
+</body>
+</html>
+
