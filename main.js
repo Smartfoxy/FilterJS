@@ -1,3 +1,5 @@
+"use strict"
+
 class ElectronicItem {
     constructor(img, name, country, brend, diagonal, price) {
         this.img = img;
@@ -119,8 +121,8 @@ $priceValueForm.minPrice.value = priceRange.min;
 $priceValueForm.maxPrice.value = priceRange.max;
 $countOfItems.innerHTML = listOfSomeItems.length;
 
-$filterList = document.querySelectorAll('.filter input');
-$propertyList = document.querySelectorAll('.filter_property');
+const $filterList = document.querySelectorAll('.filter input');
+const $propertyList = document.querySelectorAll('.filter_property');
 
 //здесь также можно реализовать динамический список самих фильтров в зависимости от типа устройства (было бы время:)
 function fillFilterWithValuesandSortIt(filter, listOfSomeItems) {
